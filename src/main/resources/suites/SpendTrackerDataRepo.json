@@ -1,0 +1,6 @@
+{
+  "name": "SpendTrackerDataRepo",
+  "description": "Tests to generate data via Data Repo for the Spend Tracker POC.",
+  "serverSpecificationFile": "mmdev.json",
+  "testConfigurationFiles": ["spendtracker/DatasetNoFiles.json", "spendtracker/DatasetWithFile.json", "spendtracker/DatasetWithFileRequestorPays.json"]
+}

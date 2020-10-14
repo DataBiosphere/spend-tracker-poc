@@ -1,6 +1,11 @@
 {
   "name": "SpendTracker",
-  "description": "Tests to generate data for Spend Tracker POC work.",
+  "description": "Tests to generate data directly for the Spend Tracker POC.",
   "serverSpecificationFile": "mmdev.json",
-  "testConfigurationFiles": ["spendtracker/DatasetNoFiles.json", "spendtracker/DatasetWithFile.json", "spendtracker/DatasetWithFileRequestorPays.json"]
+  "testConfigurationFiles": [
+    "spendtracker/SpendAlertProject.json",
+    "spendtracker/SpendDataBigQuery.json",
+    "spendtracker/SpendDataBigQueryJob.json",
+    "spendtracker/SpendDataStorage.json",
+    "spendtracker/SpendDataStorageRequestorPays.json"]
 }
