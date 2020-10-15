@@ -22,28 +22,28 @@ library, because there was already utility code for both of these things in the 
 Below is a list of all the classes and files written for this POC.
 
 These classes and test configuration files create cloud resources directly.
-  1. testscripts.spendtracker.SpendAlert : Creates a budget and alert threshold.
-  2. testscripts.spendtracker.SpendDataBigQuery : Creates a BigQuery dataset and tables, populates and labels them.
-  3. testscripts.spendtracker.SpendDataBigQueryJob : Runs a BigQuery job and labels it.
-  4. testscripts.spendtracker.SpendDataStorage : Creates a bucket, populates and labels it.
-  5. resources/suites/SpendTracker.json : A list of all the test configurations that exercise the above classes.
-    a. resources/configs/spendtracker/SpendAlertProject.json
-    b. resources/configs/spendtracker/SpendDataBigQuery.json
-    c. resources/configs/spendtracker/SpendDataBigQueryJob.json
-    d. resources/configs/spendtracker/SpendDataStorage.json
-    e. resources/configs/spendtracker/SpendDataStorageRequestorPays.json
+  * testscripts.spendtracker.SpendAlert : Creates a budget and alert threshold.
+  * testscripts.spendtracker.SpendDataBigQuery : Creates a BigQuery dataset and tables, populates and labels them.
+  * testscripts.spendtracker.SpendDataBigQueryJob : Runs a BigQuery job and labels it.
+  * testscripts.spendtracker.SpendDataStorage : Creates a bucket, populates and labels it.
+  * resources/suites/SpendTracker.json : A list of all the test configurations that exercise the above classes.
+     * resources/configs/spendtracker/SpendAlertProject.json
+     * resources/configs/spendtracker/SpendDataBigQuery.json
+     * resources/configs/spendtracker/SpendDataBigQueryJob.json
+     * resources/configs/spendtracker/SpendDataStorage.json
+     * resources/configs/spendtracker/SpendDataStorageRequestorPays.json
 
 These classes and test configuration files call Data Repo to create cloud resources.
-  6. testscripts.baseclasses.CreateProfile : Creates a Data Repo billing profile.
-  7. testscripts.CreateDataset : Creates a dataset, optionally uploads files and tabular data with their references.
-  8. resources/suites/SpendTrackerDataRepo.json : A list of all the test configurations that exercise the above classes.
-    a. resources/configs/spendtracker/DatasetNoFiles.json
-    b. resources/configs/spendtracker/DatasetWithFile.json
-    c. resources/configs/spendtracker/DatasetWithFileRequestorPays.json
+  * testscripts.baseclasses.CreateProfile : Creates a Data Repo billing profile.
+  * testscripts.CreateDataset : Creates a dataset, optionally uploads files and tabular data with their references.
+  * resources/suites/SpendTrackerDataRepo.json : A list of all the test configurations that exercise the above classes.
+     * resources/configs/spendtracker/DatasetNoFiles.json
+     * resources/configs/spendtracker/DatasetWithFile.json
+     * resources/configs/spendtracker/DatasetWithFileRequestorPays.json
 
 These classes are utility classes, the ones most likely to be helpful the next time this gets picked up.
-  9. common.utils.LabelUtils : Methods for validating labels.
-  10. common.utils.BudgetUtils : Methods for creating budgets.
+  * common.utils.LabelUtils : Methods for validating labels.
+  * common.utils.BudgetUtils : Methods for creating budgets.
 
 ## Running POC Code
 Running the POC code is the same as running any Test Runner code.
